@@ -208,6 +208,17 @@ const APPS = [
     author: MY_NAME,
     url: "https://report-gen-sage.vercel.app",
   },
+  {
+    id: "style-polishing",
+    needsKey: false,
+    name: "생기부 AI 티 제거·문체 교정기",
+    category: "record",
+    emoji: "✨",
+    desc: "생기부 초안의 번역투·AI 관용구·접속사 남발·기재 불가 표현을 찾아 '~함' 명사형으로 다듬어 줍니다. 의미와 NEIS 바이트 분량은 그대로 두고, 나이스 엑셀 파일 일괄 교정도 지원합니다.",
+    tags: ["생기부", "윤문", "AI티제거", "NEIS", "엑셀일괄"],
+    author: MY_NAME,
+    url: "https://style-polishing.vercel.app",
+  },
 
   // ---------- 기타 도구 ----------
   {

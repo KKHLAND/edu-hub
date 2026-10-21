@@ -132,6 +132,17 @@ const APPS = [
     author: MY_NAME,
     url: "https://interview-gen.ai.studio/",
   },
+  {
+    id: "interview-lab",
+    needsKey: true,
+    name: "생기부 면접 Lab",
+    category: "record",
+    emoji: "🎯",
+    desc: "학교생활기록부 PDF를 올리고 대학·학과를 고르면 입학사정관 시점의 생기부 리뷰, 맞춤 면접 질문·모범 답변·꼬리질문을 만들고 타이머·음성 답변으로 실전 연습까지 할 수 있습니다. (인적사항은 읽지 않음)",
+    tags: ["면접", "학종", "생기부", "모범답변", "실전연습"],
+    author: MY_NAME,
+    url: "https://interview-gen-sigma.vercel.app",
+  },
 
   // ---------- 기타 도구 ----------
   {

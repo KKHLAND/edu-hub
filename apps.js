@@ -233,6 +233,17 @@ const APPS = [
 
   // ---------- 기타 도구 ----------
   {
+    id: "form-revival",
+    needsKey: false,
+    name: "양식 되살리기",
+    category: "tools",
+    emoji: "🪄",
+    desc: "편집이 막힌 PDF·잠긴 hwpx 양식을 올리면 표·칸·선·글자 배치를 원본대로 다시 짜서 한글에서 바로 고칠 수 있는 hwpx로 만들어 줍니다. (스캔본·사진은 Gemini 키로 AI 인식)",
+    tags: ["hwpx", "양식변환", "PDF", "표복원"],
+    author: MY_NAME,
+    url: "https://form-revival.vercel.app",
+  },
+  {
     id: "textbook-selection",
     needsKey: false,
     name: "검·인정도서 선정 평가표 생성기",

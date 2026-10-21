@@ -165,7 +165,7 @@ const APPS = [
     desc: "손글씨 사진·스캔본·PDF를 올리면 문맥까지 고려해 손글씨를 판독하고, 마크다운 텍스트나 시험지·활동지 양식의 hwpx 문서로 내보내 줍니다.",
     tags: ["OCR", "손글씨", "hwpx", "활동지"],
     author: MY_NAME,
-    url: "https://handwriting-ocr1.ai.studio/",
+    url: "https://handwriting-ocr-gold.vercel.app/",
   },
 
   // ==================== 키 없이 바로 사용 ====================

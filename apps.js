@@ -157,15 +157,15 @@ const APPS = [
     url: "https://slide-script-gen.ai.studio/",
   },
   {
-    id: "ocr-it",
+    id: "handwriting-ocr",
     needsKey: true,
-    name: "OCR IT",
+    name: "손글씨 OCR 스튜디오",
     category: "tools",
-    emoji: "🔍",
-    desc: "다단 논문, 표·수식, 여러 쪽 PDF·스캔 문서, 학생 손글씨까지 인식해 마크다운 텍스트로 복원합니다.",
-    tags: ["OCR", "문자인식", "PDF", "마크다운"],
+    emoji: "✍️",
+    desc: "손글씨 사진·스캔본·PDF를 올리면 문맥까지 고려해 손글씨를 판독하고, 마크다운 텍스트나 시험지·활동지 양식의 hwpx 문서로 내보내 줍니다.",
+    tags: ["OCR", "손글씨", "hwpx", "활동지"],
     author: MY_NAME,
-    url: "https://ocr-it.ai.studio/",
+    url: "https://handwriting-ocr1.ai.studio/",
   },
 
   // ==================== 키 없이 바로 사용 ====================

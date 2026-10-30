@@ -95,6 +95,12 @@ svg { display: block; }
 .nav__search svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
 .nav__search:hover { background: var(--bg-soft); }
 .nav__toggle { display: none; flex-direction: column; gap: 4px; }
+.nav__install {
+  margin-left: 8px; padding: 6px 12px; border: 0; border-radius: 999px; white-space: nowrap;
+  background: var(--primary); color: var(--primary-ink); font: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
+}
+.nav__install:hover { filter: brightness(1.05); }
+.nav__install[hidden] { display: none; }
 .nav__toggle span { width: 20px; height: 2px; background: currentColor; border-radius: 2px; }
 
 /* ---------- 히어로 ---------- */
@@ -332,6 +338,8 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--p
   }
   .nav__menu.is-open { display: flex; }
   .nav__search { margin-left: auto; }
+  .nav__install { margin-left: auto; }
+  .nav__install:not([hidden]) + .nav__search { margin-left: 0; }
   .hero__inner { grid-template-columns: 1fr; padding-top: 32px; }
   .hero__art { order: -1; }
   .hero__art svg { max-width: 220px; margin: 0 auto; }

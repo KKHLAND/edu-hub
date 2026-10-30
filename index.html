@@ -4,6 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>eduhub · 선생님을 위한 앱 저장소</title>
+  <meta name="theme-color" content="#2b6bf3" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icons/icon-192.png" type="image/png" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="eduhub" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" />
   <link rel="stylesheet" href="styles.css" />
@@ -22,6 +27,7 @@
         <a href="#" class="is-active" data-filter="all">Home</a>
         <!-- 분류 메뉴는 main.js가 apps.js의 CATEGORIES로 채움 -->
       </nav>
+      <button class="nav__install" id="installBtn" hidden>⬇ 앱 설치</button>
       <button class="nav__search" id="navSearchBtn" aria-label="검색">
         <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
       </button>
@@ -162,5 +168,6 @@
   <script src="apps.js"></script>
   <script src="store.js"></script>
   <script src="main.js"></script>
+  <script src="pwa.js"></script>
 </body>
 </html>

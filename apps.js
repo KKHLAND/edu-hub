@@ -122,6 +122,17 @@ const APPS = [
     url: "https://handwrting-summarizer.ai.studio/",
   },
   {
+    id: "handwriting-summarizer",
+    needsKey: true,
+    name: "손글씨 요약기",
+    category: "record",
+    emoji: "🖊️",
+    desc: "학번·이름이 적힌 손글씨 활동지(PDF)를 올리면 학생별로 내용을 읽어 생기부 기재용으로 요약하고, 클립보드 복사나 엑셀로 내려받을 수 있습니다. (명렬표를 올리면 학번·이름 매칭 보정)",
+    tags: ["손글씨", "활동지", "요약", "생기부", "엑셀"],
+    author: MY_NAME,
+    url: "https://handwriting-summarizer.ai.studio/",
+  },
+  {
     id: "interview-questions",
     needsKey: true,
     name: "학생부 활동·탐구 면접 질문 생성기",

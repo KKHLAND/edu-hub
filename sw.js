@@ -1,6 +1,6 @@
 // 앱 설치(PWA)용 서비스 워커
 // 항상 네트워크에서 최신 파일을 먼저 받고, 오프라인일 때만 저장해 둔 사본을 보여줌
-const CACHE = "eduhub-v1";
+const CACHE = "eduhub-v2";
 const SHELL = [
   "./",
   "index.html",

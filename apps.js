@@ -189,6 +189,17 @@ const APPS = [
     author: MY_NAME,
     url: "https://handwriting-ocr-studio.ai.studio/",
   },
+  {
+    id: "data-transition",
+    needsKey: true,
+    name: "지능형 데이터 앱",
+    category: "tools",
+    emoji: "🧠",
+    desc: "각종 업무 자료와 데이터를 AI로 분석하고 원하는 형태로 변환·정리해 줍니다.",
+    tags: ["데이터", "변환", "AI", "업무자동화"],
+    author: MY_NAME,
+    url: "https://data-transition.ai.studio/",
+  },
 
   // ==================== 키 없이 바로 사용 ====================
 

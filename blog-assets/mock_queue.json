@@ -1,0 +1,20 @@
+{
+ "note": "모의고사 해설 회차 진행표. 발행 실행마다 done이 아닌 첫 회차를 처리하고, 티스토리 3편+블로그스팟 3편 발행 후 done:true와 날짜를 적어 push. 휴일(평일 정오 실행 건너뜀): 2026-11-19(수능), 2026-11-20(재량휴업), 2026-12-25.",
+ "schedule": {"weekday": "평일 11:41 직장 컴퓨터 크롬(Browser f29c211c-be1e-4e8a-bfce-047900fcded6)", "weekend_holiday": "주말·휴일 11:41 집 노트북 내장 브라우저", "exceptions": {"2026-11-19": "수능 특별판(집 노트북 저녁, 별도 예약)", "2026-11-20": "5월 고3(집 노트북 저녁)"}},
+ "queue": [
+  {"code": "0324g1", "name": "3월 고1", "done": true, "date": "2026-11-15"},
+  {"code": "0324g2", "name": "3월 고2", "done": true, "date": "2026-11-17"},
+  {"code": "0324g3", "name": "3월 고3", "done": false},
+  {"code": "05g3", "name": "5월 고3", "done": false},
+  {"code": "06g1", "name": "6월 고1", "done": false},
+  {"code": "06g2", "name": "6월 고2", "done": false},
+  {"code": "06g3", "name": "6월 모평 고3", "done": false},
+  {"code": "07g3", "name": "7월 고3", "done": false},
+  {"code": "09g1", "name": "9월 고1", "done": false},
+  {"code": "09g2", "name": "9월 고2", "done": false},
+  {"code": "09g3", "name": "9월 모평 고3", "done": false},
+  {"code": "10g1", "name": "10월 고1", "done": false},
+  {"code": "10g2", "name": "10월 고2", "done": false},
+  {"code": "10g3", "name": "10월 고3", "done": false}
+ ]
+}

@@ -8,3 +8,5 @@
 - 발행: 내장 브라우저 kkhland /manage/newpost/ → localStorage '__v2prep'(base 커밋 경로만 바꿔 사용) 또는 같은 절차: 이미지 붙여넣기 업로드로 [##_Image..##] 코드 받기 → 본문 setContent → 제목·태그 → 카테고리 '모의고사 해설' → 본문 실제 클릭+End/스페이스/백스페이스 → 완료 → 공개·예약(날짜·시각)·URL 슬러그·대표 이미지 → 공개 발행 → 캡차는 사용자 입력, 저장 끝날 때까지 탭 이동 금지.
 - 티스토리 하루 새 글 5개 한도: 이슈 글 하루 2개(09:07, 13:07) + 모의고사 3편.
 - 자산: GitHub KKHLAND/edu-hub blog-assets 브랜치 blog-assets/v2_<코드>/ (jsDelivr 커밋 고정).
+
+- (11/17 사용자 결정) 듣기편은 음원을 직접 넣지 않고, 문항마다 'EBSi 무료 음원 바로가기' 링크(p.ebs-link)만 단다. new_format_g2.py에 반영됨. 독해편에는 넣지 않음.

@@ -119,7 +119,9 @@ def build(part, embed, items=None):
         ty = TYPE.get(nums[0], '') if len(nums) == 1 else ('장문' if nums[0] >= 41 else '세트 문항')
         pt = ''.join('<span class="pt">[3점]</span>' for n in nums if n in M.PT3)[:30]
         h.append(f'<div class="item"><h3>{lab}<span class="ty">{e(ty)}</span>{pt}</h3>{img_tag(key, nums, embed)}'
-                 f'<div class="tip">{tip(nums)}</div></div>')
+                 f'<div class="tip">{tip(nums)}</div>'
+                 + (f'<p class="ebs-link" style="margin:8px 0 2px;font-size:.95em">🎧 <a href="https://www.ebsi.co.kr/ebs/xip/xipc/previousPaperList.ebs" target="_blank" rel="noopener" style="color:#1a73e8;font-weight:700">EBSi 무료 음원 바로가기</a> <span style="color:#888">({lab} 다시 듣기 · 학력평가 기출 → 해당 회차 → 듣기 MP3)</span></p>' if nums[0] <= 17 else '')
+                 + '</div>')
     nav = '<div class="nav"><b>📚 2026년 3월 고2 영어 모의고사 해설 시리즈</b><ol>'
     for p in PARTS:
         cur = ' (지금 보는 글)' if p is part else ''

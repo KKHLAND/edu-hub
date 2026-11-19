@@ -193,6 +193,8 @@ L = {
 12: ('Could you do that? That would be great. → 확인해 보고 다시 전화하겠다는 응답', '① 기차가 일찍 도착했다, ③ 새 기차역 — train이라는 단어만 같은 오답입니다.'),
 13: ('I need to go back and check. → 거기서 찾기를 바란다는 응원', '① keys, ③ science, ⑤ brother·gift 등 대화 속 단어를 재활용한 선택지는 대부분 오답입니다.'),
 14: ('You would be interrupting her meal. So, we should leave her alone. → 아빠의 말을 받아들이는 응답', '② 사진을 찍었다는 것은 사실과 다릅니다. 3점 문항이지만 대화의 흐름(사생활 존중)만 잡으면 어렵지 않습니다.'),
+16: ('Today, we’re learning about everyday objects in these days that previously demonstrated the high status of their owners. — 도입부에서 주제를 그대로 말합니다.', '② local traditions, ③ display techniques는 본문 단어(display, status)를 섞은 함정입니다.'),
+17: ('board games → ice cream → mirrors → tulips 순서로 언급되고, chocolate은 나오지 않습니다.', '두 번 들려주므로 첫 번째에 주제, 두 번째에 물건 목록을 확인하세요.'),
 15: ('So, Amy wants to suggest to Jake that he introduce zero-sugar beverages to the menu.', '② 건강을 위해 단 음료를 줄이라는 것은 Jake 개인에게 하는 건강 조언이라 상황과 맞지 않습니다.'),
 }
 R = {

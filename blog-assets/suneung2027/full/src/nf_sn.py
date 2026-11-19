@@ -100,9 +100,8 @@ def build(part, embed, items=None):
              f"문항마다 발문·{'듣기 대본' if a == 1 else '지문'}·선택지·해석·어휘를 한 장에 모았습니다. "
              "따로 단어장을 만들지 않아도 이 글 하나로 문제 풀이, 해석, 어휘 복습까지 끝낼 수 있게 구성했습니다.</p>")
     h.append('<div class="info"><b>📥 공식 자료</b><br>문제지 · 정답표 · 듣기 음원(MP3)과 대본은 한국교육과정평가원 홈페이지와 EBSi에서 무료로 받을 수 있습니다.<br>'
-             '<a href="https://www.ebsi.co.kr/ebs/xip/xipc/previousPaperList.ebs" target="_blank" rel="noopener">EBSi 기출문제 바로가기 ›</a><br>'
-             f'<span class="small">기출문제 → 대학수학능력시험 → 2027학년도 → 영어</span><br>'
-             f'<span class="small">⚡ 빠른 정답·총평·변별력 문항 분석은 <a href="{BLOG}2027-수능-영어-빠른-정답-총평">2027 수능 영어 특별판</a>에서 볼 수 있습니다.</span></div>')
+             '<a href="https://cdn.kice.re.kr/27dae-suneung/index.html" target="_blank" rel="noopener">한국교육과정평가원 2027 수능 문제·정답·듣기 자료 ›</a><br><a href="https://www.ebsi.co.kr/ebs/xip/xipa/retrieveSCVMainInfo.ebs?irecord=202611193&targetCd=D300&cookieGradeVal=high3" target="_blank" rel="noopener">EBSi 2027 수능 영어 문제·음원 바로가기 ›</a><br>'
+                          f'<span class="small">⚡ 빠른 정답·총평·변별력 문항 분석은 <a href="{BLOG}2027-수능-영어-빠른-정답-총평">2027 수능 영어 특별판</a>에서 볼 수 있습니다.</span></div>')
     h.append('<div class="how"><b>이렇게 공부하세요</b><br>'
              + ('① 먼저 EBSi 음원으로 문제를 풀고 → ② 대본에서 정답 근거 문장을 찾은 뒤 → ③ 해석으로 확인하고 → ④ 어휘 칸에 모르는 단어를 체크하세요.'
                 if a == 1 else
@@ -117,7 +116,7 @@ def build(part, embed, items=None):
         pt = ''.join('<span class="pt">[3점]</span>' for n in nums if n in M.PT3)[:30]
         h.append(f'<div class="item"><h3>{lab}<span class="ty">{e(ty)}</span>{pt}</h3>{img_tag(key, nums, embed)}'
                  f'<div class="tip">{tip(nums)}</div>'
-                 + (f'<p class="ebs-link" style="margin:8px 0 2px;font-size:.95em">🎧 <a href="https://www.ebsi.co.kr/ebs/xip/xipc/previousPaperList.ebs" target="_blank" rel="noopener" style="color:#1a73e8;font-weight:700">EBSi 무료 음원 바로가기</a> <span style="color:#888">({lab} 다시 듣기 · 수능 기출 → 2027학년도 → 듣기 MP3)</span></p>' if nums[0] <= 17 else '')
+                 + (f'<p class="ebs-link" style="margin:8px 0 2px;font-size:.95em">🎧 <a href="https://www.ebsi.co.kr/ebs/xip/xipa/retrieveSCVMainInfo.ebs?irecord=202611193&targetCd=D300&cookieGradeVal=high3" target="_blank" rel="noopener" style="color:#1a73e8;font-weight:700">EBSi 무료 음원 바로가기</a> <span style="color:#888">({lab} 다시 듣기)</span> · <a href="https://cdn.kice.re.kr/27dae-suneung/index.html" target="_blank" rel="noopener" style="color:#1a73e8">평가원 듣기 MP3·대본</a></p>' if nums[0] <= 17 else '')
                  + '</div>')
     nav = f'<div class="nav"><b>📚 2027학년도 수능 영어 해설 시리즈</b><ol><li><a href="{BLOG}2027-수능-영어-빠른-정답-총평">빠른 정답 및 총평 (특별판)</a></li>'
     for p in PARTS:

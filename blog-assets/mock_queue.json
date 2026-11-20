@@ -30,7 +30,22 @@
   {
    "code": "05g3",
    "name": "5월 고3",
-   "done": false
+   "done": false,
+   "assets": "blog-assets/v2_05g3/ (commit e38cb33; 이미지 a1a9426)",
+   "tistory_left": [
+    "P2",
+    "P3"
+   ],
+   "tistory": {
+    "P1": "https://kkhland.tistory.com/entry/2026-5월-고3-영어-모의고사-듣기-해설"
+   },
+   "blogspot": [
+    "https://kkhnote.blogspot.com/2026/11/mock-05g3-imp.html",
+    "https://kkhnote.blogspot.com/2026/11/mock-05g3-blank.html",
+    "https://kkhnote.blogspot.com/2026/11/mock-05g3-order.html"
+   ],
+   "blogspot_date": "2026-11-20",
+   "note": "jsDelivr가 저장소 50MB 초과로 일부 파일(q22·q26·q37·q39·v2prep.js 등)에 'Package size exceeded'를 돌려줌 → 티스토리 BASE는 https://raw.githubusercontent.com/KKHLAND/edu-hub/e38cb33/blog-assets/v2_05g3/ 사용, v2prep.js도 raw에서 eval"
   },
   {
    "code": "06g1",

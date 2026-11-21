@@ -52,7 +52,20 @@
   {
    "code": "06g1",
    "name": "6월 고1",
-   "done": false
+   "done": true,
+   "date": "2026-11-21",
+   "assets": "blog-assets/v2_06g1/ (85e4b3f, hard HTML cdab6e6)",
+   "tistory": {
+    "P1": "https://kkhland.tistory.com/entry/2026-6월-고1-영어-모의고사-듣기-해설",
+    "P2": "https://kkhland.tistory.com/entry/2026-6월-고1-영어-모의고사-독해-18-30-해설",
+    "P3": "https://kkhland.tistory.com/entry/2026-6월-고1-영어-모의고사-독해-31-45-해설"
+   },
+   "blogspot": [
+    "https://kkhnote.blogspot.com/2026/11/mock-06g1-imp.html",
+    "https://kkhnote.blogspot.com/2026/11/blog-post_21.html",
+    "https://kkhnote.blogspot.com/2026/11/blog-post_284.html"
+   ],
+   "note": "②·③ 맞춤 퍼머링크가 적용되지 않아 자동 주소로 게시됨 → 시리즈 링크를 실제 주소로 고쳐 업데이트함. 블로그스팟 이미지는 raw.githubusercontent 사용."
   },
   {
    "code": "06g2",
@@ -118,5 +131,6 @@
     "https://kkhland.tistory.com/entry/2027-수능-영어-독해-31-45-해설"
    ]
   }
- ]
+ ],
+ "note_blogspot_permalink": "맞춤 퍼머링크는 두 번째 글부터 숨은 이전 입력칸이 남아 적용 안 되는 일이 있음 → 게시 후 피드(/feeds/posts/default?alt=json)로 실제 주소를 확인하고, 시리즈 링크는 실제 주소로 넣을 것."
 }

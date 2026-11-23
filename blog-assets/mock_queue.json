@@ -70,7 +70,7 @@
   {
    "code": "06g2",
    "name": "6월 고2",
-   "done": false,
+   "done": true,
    "assets": "blog-assets/v2_06g2/ (이미지·티스토리 HTML 1dd125c, 고난도 썸네일 fa1d6f5, hard HTML ead0af2)",
    "blogspot": [
     "https://kkhnote.blogspot.com/2026/11/mock-06g2-imp.html",
@@ -78,12 +78,14 @@
     "https://kkhnote.blogspot.com/2026/11/mock-06g2-order.html"
    ],
    "blogspot_date": "2026-11-23 (12:00/12:30/13:00 예약)",
-   "tistory_left": [
-    "P1",
-    "P2",
-    "P3"
-   ],
-   "note": "11/23 P1 듣기 12:00 예약 저장 중 카카오 캡차 대기"
+   "tistory_left": [],
+   "note": "11/23 6편 모두 12:00/12:30/13:00 예약. 티스토리는 발행마다 카카오 캡차(사용자 입력). 태그는 #tagText를 JS focus 후 타이핑(좌표 클릭 시 본문에 들어감, 'A' 링크 클릭은 태그 수정 모드).",
+   "date": "2026-11-23",
+   "tistory": {
+    "P1": "https://kkhland.tistory.com/entry/2026-6월-고2-영어-모의고사-듣기-해설",
+    "P2": "https://kkhland.tistory.com/entry/2026-6월-고2-영어-모의고사-독해-18-30-해설",
+    "P3": "https://kkhland.tistory.com/entry/2026-6월-고2-영어-모의고사-독해-31-45-해설"
+   }
   },
   {
    "code": "06g3",

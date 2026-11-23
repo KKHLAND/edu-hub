@@ -70,7 +70,20 @@
   {
    "code": "06g2",
    "name": "6월 고2",
-   "done": false
+   "done": false,
+   "assets": "blog-assets/v2_06g2/ (이미지·티스토리 HTML 1dd125c, 고난도 썸네일 fa1d6f5, hard HTML ead0af2)",
+   "blogspot": [
+    "https://kkhnote.blogspot.com/2026/11/mock-06g2-imp.html",
+    "https://kkhnote.blogspot.com/2026/11/mock-06g2-blank.html",
+    "https://kkhnote.blogspot.com/2026/11/mock-06g2-order.html"
+   ],
+   "blogspot_date": "2026-11-23 (12:00/12:30/13:00 예약)",
+   "tistory_left": [
+    "P1",
+    "P2",
+    "P3"
+   ],
+   "note": "11/23 P1 듣기 12:00 예약 저장 중 카카오 캡차 대기"
   },
   {
    "code": "06g3",

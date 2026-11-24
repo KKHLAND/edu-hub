@@ -90,7 +90,22 @@
   {
    "code": "06g3",
    "name": "6월 모평 고3",
-   "done": false
+   "done": true,
+   "date": "2026-11-24",
+   "tistory_left": [],
+   "assets": "blog-assets/v2_06g3/ (스크린샷·티스토리 HTML dc4afb5, 고난도 썸네일 a421add, hard HTML 6216f12)",
+   "blogspot": [
+    "https://kkhnote.blogspot.com/2026/11/mock-06g3-imp.html",
+    "https://kkhnote.blogspot.com/2026/11/mock-06g3-blank.html",
+    "https://kkhnote.blogspot.com/2026/11/mock-06g3-order.html"
+   ],
+   "blogspot_date": "2026-11-24 (12:00/12:30/13:00 예약)",
+   "tistory": {
+    "P1": "https://kkhland.tistory.com/entry/2026년-6월-고3-영어-모의고사-듣기-117번-해설-대본·해석·어휘",
+    "P2": "https://kkhland.tistory.com/entry/2026-6월-고3-영어-모의고사-독해-18-30-해설",
+    "P3": "https://kkhland.tistory.com/entry/2026-6월-고3-영어-모의고사-독해-31-45-해설"
+   },
+   "note": "새 해설지(1~45 전체, 문항당 1페이지) 첫 적용 회차. P1은 11:40 발행(자동 슬러그), P2 12:3x 즉시 발행, P3 13:00 예약."
   },
   {
    "code": "07g3",

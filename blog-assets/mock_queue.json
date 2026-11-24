@@ -110,12 +110,9 @@
   {
    "code": "07g3",
    "name": "7월 고3",
-   "done": false,
+   "done": true,
    "date": "2026-11-25",
-   "tistory_left": [
-    "P2",
-    "P3"
-   ],
+   "tistory_left": [],
    "assets": "blog-assets/v2_07g3/ (스크린샷·티스토리 HTML·썸네일 1cbf288, hard HTML e0f1728)",
    "blogspot": [
     "https://kkhnote.blogspot.com/2026/11/mock-07g3-imp.html",
@@ -124,8 +121,12 @@
    ],
    "blogspot_date": "2026-11-25 (12:00/12:30/13:00 예약, 라벨 5개 적용)",
    "tistory": {
-    "P1": "https://kkhland.tistory.com/entry/2026-7월-고3-영어-모의고사-듣기-해설"
-   }
+    "P1": "https://kkhland.tistory.com/entry/2026-7월-고3-영어-모의고사-듣기-해설",
+    "P2": "https://kkhland.tistory.com/entry/2026-7월-고3-영어-모의고사-독해-18-30-해설",
+    "P3": "https://kkhland.tistory.com/entry/2026-7월-고3-영어-모의고사-독해-31-45-해설"
+   },
+   "tistory_date": "2026-11-25 (12:00/12:30/13:00 예약)",
+   "note": "새 해설지 스크린샷 방식 2번째 회차. 티스토리 캡차 만료 2회(P1·P2) 후 재시도로 저장."
   },
   {
    "code": "09g1",

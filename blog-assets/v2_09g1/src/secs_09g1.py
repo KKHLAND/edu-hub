@@ -1,0 +1,216 @@
+import json, sys
+REF = sys.argv[1] if len(sys.argv) > 1 else 'REF'
+B = f'https://raw.githubusercontent.com/KKHLAND/edu-hub/{REF}/blog-assets/v2_09g1/'
+def img(n, lab=None):
+    lab = lab or f'{n}번'
+    return (f'<img src="{B}q{n}.png" alt="2026년 9월 고1 영어 모의고사 {lab} 발문 지문 선택지 해석 어휘">\n'
+            '<p class="cap">발문·지문·선택지·해석·어휘</p>\n')
+S = {}
+S['21'] = '<h2>21번 · 함축 의미 추론 [3점]</h2>\n' + img(21) + '''<h3>① 지문 구조</h3>
+<p><b>전제</b> 우리는 경이롭게 만들어졌지만 그 경이로움에 참여하지 않는다 → <b>현상</b> 하루 종일 의자에 앉아 있고, 아이들은 스마트 기기에 사로잡혀 밖에서 놀지 않는다 → <b>결과</b> 움직임 레퍼토리를 배우지 못하고, 달리기·뛰기·오르기조차 못 배우며 불안·우울·질병을 안고 산다 → 밑줄: 우리는 우리의 설계에서 점점 멀어지고 있다 → <b>결론</b> 우리는 움직이도록 만들어졌다.</p>
+<h3>② 정답 근거</h3>
+<div class="key"><span class="en">We were <b>made to move</b>―and through movement, we are meant to live extraordinary lives. <b>Movement is life to us.</b></span><br>'설계(design)' = 움직이도록 만들어진 몸. 거기서 멀어진다는 것은 <b>① 생물학적으로 타고난 신체 활동적인 삶을 살지 못하는 것</b>입니다.</div>
+<h3>③ 선택지 전부 분석</h3>
+<ul class="ch">
+<li class="ans">① 생물학적으로 만들어진 신체 활동적인 삶을 살지 못하는 것 <span class="o">— 정답.</span> made to move ↔ physically active, design ↔ biologically built</li>
+<li>② 스마트 기기 없이 아이디어를 만들지 못하게 되는 것 <span class="x">— smart devices라는 단어를 빌린 함정. 글의 초점은 '생각'이 아니라 '움직임'입니다.</span></li>
+<li>③ 정서적 성숙보다 외모에 더 집중하는 것 <span class="x">— emotionally mature가 나오지만 외모 이야기는 없습니다.</span></li>
+<li>④ 인간의 편의를 위한 창의적 도구를 설계하는 능력을 잃는 것 <span class="x">— design을 '설계하다'라는 동사로 바꾼 함정입니다. 밑줄의 design은 '우리 몸의 설계'입니다.</span></li>
+<li>⑤ 가상 세계에서 의미 있는 관계를 맺는 데 어려움을 겪는 것 <span class="x">— socialize가 나오지만 가상 세계의 관계는 다루지 않습니다.</span></li>
+</ul>
+<h3>④ 핵심 구문</h3>
+<div class="key"><span class="en">we don’t allow ourselves to participate in the wonder <b>for which</b> we were created</span><br>전치사 + 관계대명사: we were created for the wonder(우리는 그 경이로움을 위해 창조되었다)가 합쳐진 구조입니다.</div>
+<div class="tip"><b>함축 의미 공략법</b> 밑줄 바로 뒤 문장이 밑줄을 풀어 줍니다(We were made to move). 밑줄 속 단어(design)를 다른 뜻으로 바꾼 선택지(④)가 가장 흔한 함정입니다.</div>'''
+
+S['29'] = '<h2>29번 · 어법 [2점]</h2>\n' + img(29) + '''<h3>① 지문 구조</h3>
+<p><b>설명</b> 몸은 산소를 쓰는 유산소 호흡과 산소 없이 하는 무산소 호흡으로 에너지를 만든다 → 무산소 에너지는 빠르지만 비효율적이고 젖산을 많이 만든다 → <b>적용</b> 그래서 고강도 운동의 처음 몇 분이 힘들고, 몸이 풀리면 유산소로 전환되어 운동이 쉬워진다.</p>
+<h3>② 정답: ④ is → are</h3>
+<div class="key"><span class="en">This process explains why <b>the first few minutes</b> of an intense workout ④ <b>is</b> often so miserable.</span><br>why 절의 주어는 the first few minutes(복수)입니다. of an intense workout은 수식어이므로 동사는 <b>are</b>가 되어야 합니다.</div>
+<h3>③ 선택지 전부 분석</h3>
+<ul class="ch">
+<li>① which <span class="x">— 콤마 뒤 계속적 용법. 앞의 one without it(산소 없이 하는 것)을 받고 뒤가 불완전(주어 없음)하므로 맞습니다.</span></li>
+<li>② to access <span class="x">— 형용사(quicker and easier) + for 의미상 주어 + to부정사: '우리 몸이 이용하기에 더 빠르고 쉬운'. 맞습니다.</span></li>
+<li>③ creating <span class="x">— 앞 절 전체의 결과를 나타내는 분사구문(그래서 너무 많은 젖산을 만든다). 맞습니다.</span></li>
+<li class="ans">④ is <span class="o">— 정답(틀린 것).</span> 주어 minutes(복수) → are</li>
+<li>⑤ warmed <span class="x">— we’re warmed up: 몸이 '데워지는' 수동이므로 과거분사가 맞습니다.</span></li>
+</ul>
+<h3>④ 핵심 구문</h3>
+<div class="key"><span class="en">The sickness, muscle weakness, and sweating you experience after pushing yourself too hard at the gym <b>are</b> the feeling of anaerobic overload.</span><br>같은 글에서 주어가 길어도 동사는 맨 앞 명사들(복수)에 맞췄습니다. you experience …는 목적격 관계대명사가 생략된 수식어입니다.</div>
+<div class="tip"><b>어법 공략법</b> 동사 밑줄은 <b>진짜 주어</b>를 찾아 수를 맞추세요. 'A of B' 구조에서는 B(workout)가 아니라 A(minutes)가 주어입니다.</div>'''
+
+S['30'] = '<h2>30번 · 문맥상 낱말의 쓰임 [3점]</h2>\n' + img(30) + '''<h3>① 지문 구조</h3>
+<p><b>주장</b> 단락을 짧게 유지하라: 글은 눈을 먼저 사로잡는다 → 짧은 단락은 여백 덕분에 매력적, 긴 덩어리는 읽기를 꺼리게 한다 → <b>반론 처리</b> 잦은 단락 나누기가 요지 전개를 해칠까 걱정하지만 이점이 더 크다 → <b>단서</b> 하지만 지나치지 말라: 아주 짧은 단락의 연속도 짜증스럽다 → 그것들은 생각의 흐름을 끊어 독자의 일을 (⑤)하게 만든다.</p>
+<h3>② 정답: ⑤ easier → harder</h3>
+<div class="key"><span class="en">Actually they make the reader’s job ⑤ <b>easier</b> by cutting the natural thread of thought.</span><br>기자들은 기사를 쉽게 만들려고 아주 짧은 단락을 쓰지만, <b>Actually</b>(사실은) 생각의 흐름을 끊어 독자의 일을 <b>더 어렵게(harder)</b> 만든다는 반전입니다.</div>
+<h3>③ 선택지 전부 분석</h3>
+<ul class="ch">
+<li>① visual <span class="x">— 글은 뇌보다 '눈'을 먼저 사로잡으므로 '시각적'. 적절합니다.</span></li>
+<li>② inviting <span class="x">— 여백 덕분에 '매력적으로(읽고 싶게)' 보인다. 적절합니다.</span></li>
+<li>③ damage <span class="x">— 잦은 단락 나누기가 요지 전개를 '해칠' 것이라는 걱정. 적절합니다.</span></li>
+<li>④ annoying <span class="x">— 아주 짧은 단락의 연속은 너무 긴 단락만큼 '짜증스럽다'. 적절합니다.</span></li>
+<li class="ans">⑤ easier <span class="o">— 정답(부적절).</span> Actually + cutting the natural thread → harder</li>
+</ul>
+<h3>④ 핵심 구문</h3>
+<div class="key"><span class="en">A succession of tiny paragraphs is <b>as</b> annoying <b>as</b> a paragraph that’s too long.</span><br>as + 형용사 + as: '~만큼 …한'. 주어는 A succession(단수)이라 is가 쓰였습니다.</div>
+<div class="tip"><b>어휘 공략법</b> <b>Actually·In fact</b> 뒤는 앞의 기대(기사를 빠르고 쉽게)를 뒤집는 내용이 옵니다. 그 기대를 그대로 따라간 단어(easier)를 의심하세요.</div>'''
+
+S['42'] = '<h2>42번 · 장문 어휘 [3점] (41번 제목 포함)</h2>\n' + img('41-42', '41~42번') + '''<h3>① 지문 구조</h3>
+<p><b>변화</b> 인터넷 때문에 대중문화에서 슬랭의 역할이 근본적으로 바뀌었다 → <b>과거</b> 표준 영어의 규범이 의사소통 경로를 지배, 인쇄·방송 매체의 제약 안에서 일해야 했다 → <b>현재</b> 소셜 미디어가 장벽을 허물어 누구나 공적 인물이 되고, 콘텐츠 제작자가 슬랭을 퍼뜨린다 → 다양한 배경 덕분에 사회·경제적 장벽도 넘는다 → 느슨한 사회적 네트워크가 온라인에서 (e)___하고 밈이 빠르게 퍼진다.</p>
+<h3>② 정답: ⑤ (e) weaker → stronger</h3>
+<div class="key"><span class="en">The loose social networks that previously connected us geographically are simply (e) <b>weaker</b> online, and memes are now transmitted at rapid pace.</span><br>밈이 빠르게 전파된다는 결과와 이어지려면 온라인의 사회적 네트워크는 '더 약한' 것이 아니라 <b>더 강한(stronger)</b> 것이어야 합니다.</div>
+<h3>③ 선택지 전부 분석</h3>
+<ul class="ch">
+<li>(a) channels <span class="x">— 규범이 우리의 의사소통 '경로'를 지배했다. 적절합니다.</span></li>
+<li>(b) within <span class="x">— 매체의 제약 '안에서' 일해야 했다(conforming to the strict expectations). 적절합니다.</span></li>
+<li>(c) enforce <span class="x">— 누구나 공적 인물이 되어 옛 규칙을 '강제할' 사람이 남지 않았다. 적절합니다.</span></li>
+<li>(d) greater <span class="x">— 콘텐츠 제작자는 전통 매체 종사자보다 '더 다양한' 배경 출신. 적절합니다.</span></li>
+<li class="ans">(e) weaker <span class="o">— 정답(부적절).</span> transmitted at rapid pace → stronger</li>
+</ul>
+<h3>④ 41번 제목도 함께</h3>
+<div class="key">인터넷·소셜 미디어라는 새 매체가 슬랭의 확산 방식을 바꾸었다 → <b>① When Slang Meets New Media</b>. ⑤(전통 매체에서 언어가 진화하는 방식)는 글의 대비 대상을 주제로 착각한 오답이고, ④는 Barrier·Social Networks 단어만 빌렸습니다.</div>
+<div class="tip"><b>장문 어휘 공략법</b> 마지막 문장의 밑줄은 <b>and 뒤 결과</b>(memes are transmitted at rapid pace)와 맞는지 확인하세요. 원인과 결과의 방향이 어긋나는 단어가 정답입니다.</div>'''
+
+S['31'] = '<h2>31번 · 빈칸 추론(단어) [2점]</h2>\n' + img(31) + '''<h3>① 빈칸 문장의 역할</h3>
+<p><b>빈칸 문장(주제)</b> 우리의 입맛은 ______이다 → 처음 마신 우유 뒤에도 음식과의 관계를 형성한 '사람'이 있었다 → 가족·친구·학교·직장에서 먹는 법을 배운다 → 한 마을의 사과파이 레시피 → 입맛은 바이러스처럼 사람에서 사람으로 퍼진다 → 우리는 다른 사람들을 그들의 식생활로 관찰한다.</p>
+<h3>② 정답 근거</h3>
+<div class="key"><span class="en">We learn to eat <b>from family and friends</b>, at school and at work. … Tastes spread like this <b>from person to person</b>, like a virus</span><br>입맛은 사람들과의 관계 속에서 배우고 퍼진다 → <b>① social(사회적)</b>.</div>
+<h3>③ 선택지 전부 분석</h3>
+<ul class="ch">
+<li class="ans">① social <span class="o">— 정답.</span> family and friends, person to person, who we are</li>
+<li>② fixed <span class="x">— 입맛은 퍼지고 바뀌는 것으로 묘사됩니다.</span></li>
+<li>③ simple <span class="x">— 입맛의 단순함은 다루지 않습니다.</span></li>
+<li>④ objective <span class="x">— 음식의 특성과 거의 무관하다(have little to do with the qualities of the food)고 했으므로 반대입니다.</span></li>
+<li>⑤ biological <span class="x">— 우유(생물학적 첫 음식)를 이용한 함정. 글은 우유보다 그 뒤의 '사람'을 강조합니다.</span></li>
+</ul>
+<h3>④ 핵심 구문</h3>
+<div class="key"><span class="en">We want these things not just because of what they are, <b>but because of who we are</b>.</span><br>not just A but B: 'A 때문만이 아니라 B 때문에'. B(우리가 누구인지)가 사회적 정체성을 강조합니다.</div>
+<div class="tip"><b>빈칸 공략법</b> 첫 문장 빈칸은 예시들의 <b>공통 분모</b>입니다. 예시마다 반복되는 말(family, friends, village, person to person)을 한 단어로 묶으세요.</div>'''
+
+S['32'] = '<h2>32번 · 빈칸 추론(구) [3점]</h2>\n' + img(32) + '''<h3>① 빈칸 문장의 역할</h3>
+<p><b>빈칸 문장(주제)</b> 스토아 철학의 통찰: 감정은 무작위가 아니라 ______ → 감정은 자동 반응이 아니라 사건을 어떻게 해석하는지에 의해 형성된다 → 예: 비난을 받으면 말 자체가 아니라 그것을 불공정하다고 인식해서 화가 난다 → 판단을 바꾸면 감정이 바뀐다.</p>
+<h3>② 정답 근거</h3>
+<div class="key"><span class="en">They’re shaped by <b>how we interpret events</b>. … <b>Change the judgment, and you change the emotion.</b></span><br>감정의 출처는 우리의 해석·판단입니다 → <b>② arise from our judgments</b>.</div>
+<h3>③ 선택지 전부 분석</h3>
+<ul class="ch">
+<li>① are beyond our control <span class="x">— 판단을 바꾸면 감정도 바뀐다고 했으므로 정반대입니다.</span></li>
+<li class="ans">② arise from our judgments <span class="o">— 정답.</span> interpret, judgment → emotion</li>
+<li>③ disappear over time naturally <span class="x">— 시간이 지나면 사라진다는 내용은 없습니다.</span></li>
+<li>④ give us insights into our future <span class="x">— 일자리 예시의 future를 이용한 함정입니다.</span></li>
+<li>⑤ change our initial interpretations <span class="x">— 인과가 거꾸로입니다. 해석이 감정을 바꾸지, 감정이 해석을 바꾸는 것이 아닙니다.</span></li>
+</ul>
+<h3>④ 핵심 구문</h3>
+<div class="key"><span class="en">you may feel angry <b>not due to</b> the words themselves <b>but because</b> you perceive the comment as unfair or threatening</span><br>not A but B 구조. perceive A as B: 'A를 B로 인식하다'가 '판단'의 구체적 모습입니다.</div>
+<div class="tip"><b>빈칸 공략법</b> 원인·결과를 담은 빈칸은 <b>화살표 방향</b>을 확인하세요. 해석 → 감정 순서를 뒤집은 ⑤가 이 문항의 가장 강한 함정입니다.</div>'''
+
+S['33'] = '<h2>33번 · 빈칸 추론(구) [3점]</h2>\n' + img(33) + '''<h3>① 빈칸 문장의 역할</h3>
+<p>고대 그리스인은 예술의 목표가 시각적 경험의 모방이라고 생각했다(사실적인 조각·도자기) → 회화는 남아 있지 않아 짐작만 할 수 있다 → <b>However</b>, 현실 모방이라는 정의는 문제가 있다 → Pollock은 의도적으로 아무것도 모방하지 않았다 → <b>빈칸 문장</b>: 그래서 모방으로서의 고대 그리스 예술관은 ______임을 보여 주었다.</p>
+<h3>② 정답 근거</h3>
+<div class="key"><span class="en">They succeeded in making artworks that <b>did not imitate anything</b></span><br>모방하지 않은 예술도 예술이라면, '예술 = 모방'이라는 정의는 예술을 다 담지 못합니다 → <b>① does not sufficiently define art</b>.</div>
+<h3>③ 선택지 전부 분석</h3>
+<ul class="ch">
+<li class="ans">① 예술을 충분히 정의하지 못한다 <span class="o">— 정답.</span> this definition … is problematic</li>
+<li>② 역사적으로 추상 미술보다 선호된다 <span class="x">— 선호의 문제는 다루지 않습니다.</span></li>
+<li>③ 현대 미술만큼 비판받을 수 없다 <span class="x">— 오히려 모방 예술관이 비판받는 글입니다.</span></li>
+<li>④ 시대와 상관없이 예술이 보편적임을 증명한다 <span class="x">— Pollock의 예는 모방 예술관의 '한계'를 보여 줍니다.</span></li>
+<li>⑤ 현대 예술가들이 그리스 양식을 되살리도록 영감을 준다 <span class="x">— Pollock은 그리스 양식과 반대로 작업했습니다.</span></li>
+</ul>
+<h3>④ 핵심 구문</h3>
+<div class="key"><span class="en">Pollock and his fellow artists <b>would</b> consciously <b>avoid</b> making marks or areas that resemble recognizable objects.</span><br>과거의 습관을 나타내는 would: '~하곤 했다'. resemble은 타동사라 전치사 없이 목적어를 받습니다.</div>
+<div class="tip"><b>빈칸 공략법</b> 글 중간의 <b>However</b>가 글의 방향을 정합니다. 앞(모방 예술관 소개)이 아니라 뒤(그 정의의 문제점)가 빈칸의 내용입니다.</div>'''
+
+S['34'] = '<h2>34번 · 빈칸 추론(절) [3점]</h2>\n' + img(34) + '''<h3>① 빈칸 문장의 역할</h3>
+<p><b>질문</b> 몸이 가장 잘 안다면 왜 달리기 같은 자연스러운 일에서 쉽게 다칠까? → <b>빈칸 문장</b>: 한편으로 달리기는 아주 쉬워 보이지만 그것은 오직 ______ 때문이다 → 가장 강력한 슈퍼컴퓨터도 두 다리로 달리는 데 필요한 계산을 처리하지 못한다 → 달리기 지식은 근섬유·세포·DNA 깊이 묻혀 있다.</p>
+<h3>② 정답 근거</h3>
+<div class="key"><span class="en">The most powerful supercomputer on earth could not administer the vast number of calculations required to run on two legs</span><br>컴퓨터도 못 하는 복잡한 일을 몸이 해내니 쉬워 보이는 것 → <b>② our bodies are so very good at it</b>.</div>
+<h3>③ 선택지 전부 분석</h3>
+<ul class="ch">
+<li>① 장비가 많이 필요하지 않기 때문 <span class="x">— 장비 이야기는 없습니다.</span></li>
+<li class="ans">② 우리 몸이 그것을 아주 잘하기 때문 <span class="o">— 정답.</span> supercomputer could not → 몸은 해낸다</li>
+<li>③ 상상보다 에너지가 덜 들기 때문 <span class="x">— 에너지 소비는 다루지 않습니다.</span></li>
+<li>④ 어릴 때부터 연습해 왔기 때문 <span class="x">— 그럴듯하지만, 글은 연습이 아니라 몸에 '내재된' 지식(DNA)을 말합니다.</span></li>
+<li>⑤ 단순한 동작이 의식적 사고를 요구하기 때문 <span class="x">— not fully conscious to us와 정반대입니다.</span></li>
+</ul>
+<h3>④ 핵심 구문</h3>
+<div class="key"><span class="en">Our running knowledge is buried <b>so</b> deep in muscle fibers, cells, and our DNA <b>that</b> we have to accept we cannot fully explain its complexity.</span><br>so ~ that …: '너무 ~해서 …하다'. 몸의 지식이 의식 밖에 있다는 핵심을 담은 문장입니다.</div>
+<div class="tip"><b>빈칸 공략법</b> 'A처럼 보이지만 그것은 오직 B 때문이다' 구조에서 B는 <b>바로 뒤 예시</b>(슈퍼컴퓨터 비교)가 증명합니다. 예시가 무엇을 보여 주는지 한 줄로 요약하세요.</div>'''
+
+S['36'] = '<h2>36번 · 글의 순서 [3점]</h2>\n' + img(36) + '''<h3>① 단서 정리</h3>
+<table>
+<tr><th>단락</th><th>첫머리 단서</th><th>무엇을 받나</th></tr>
+<tr><td>주어진 글</td><td class="l">수학의 주된 관심사는 숫자가 아니라 <b>패턴·구조·대칭·연결</b></td><td class="l">→ 구체적인 예가 이어질 차례</td></tr>
+<tr><td>(B)</td><td class="l"><b>Take</b> the daily Sudoku puzzle, for example. 1~9를 한 번씩 채우는 규칙</td><td class="l">주어진 글의 예시 → 바로 뒤</td></tr>
+<tr><td>(A)</td><td class="l"><b>However</b>, the numerical values of the digits are irrelevant … 중요한 건 패턴</td><td class="l">(B)의 1~9 숫자를 받아 반전 → (B) 뒤</td></tr>
+<tr><td>(C)</td><td class="l">The mere <b>thought</b> of being contaminated by mathematics … 겁을 준다</td><td class="l">(A) 끝 '수학과 관련 없음' 홍보 문구를 받음 → 맨 끝</td></tr>
+</table>
+<h3>② 정답: ② (B)-(A)-(C)</h3>
+<div class="key">수학은 패턴의 학문 → (B) 스도쿠를 예로 들면 1~9를 한 번씩 → (A) 그러나 숫자의 값은 상관없고 패턴이 중요, 한 신문은 '수학과 관련 없습니다'라고 홍보 → (C) 수학이라는 생각만으로도 풀이자를 겁준다, 스도쿠를 할 수 있으면 수학도 할 수 있다.</div>
+<h3>③ 오답 순서가 안 되는 이유</h3>
+<ul class="ch">
+<li>(A)로 시작(①) <span class="x">— However와 the digits가 가리킬 숫자 퍼즐이 아직 나오지 않았습니다.</span></li>
+<li>(B)-(C)-(A)(③) <span class="x">— (C)의 '수학에 더럽혀진다는 생각'은 (A)의 '수학과 관련 없음' 문구가 먼저 나와야 이해됩니다.</span></li>
+<li>(C)로 시작(④, ⑤) <span class="x">— 스도쿠도, 홍보 문구도 없이 '겁을 준다'가 갑자기 나옵니다.</span></li>
+</ul>
+<div class="tip"><b>순서 공략법</b> <b>for example</b>이 있는 단락은 일반 진술 바로 뒤, <b>However</b> 단락은 반전할 대상(숫자 규칙) 뒤에 옵니다. 연결어 두 개로 순서가 거의 정해집니다.</div>'''
+
+S['37'] = '<h2>37번 · 글의 순서 [2점]</h2>\n' + img(37) + '''<h3>① 단서 정리</h3>
+<table>
+<tr><th>단락</th><th>첫머리 단서</th><th>무엇을 받나</th></tr>
+<tr><td>주어진 글</td><td class="l">망원경이 존재하기 <b>전에도</b> 사람들은 우주를 이해하려 했다</td><td class="l">→ 망원경 이전 시대부터</td></tr>
+<tr><td>(C)</td><td class="l">이집트·바빌로니아·그리스·마야인 … 16세기 <b>Copernicus</b>가 맨눈으로 관측</td><td class="l">망원경 이전 관측 → 주어진 글 바로 뒤</td></tr>
+<tr><td>(B)</td><td class="l"><b>He</b> concluded … 지구가 태양 주위를 돈다 … 17세기 초 망원경 발전</td><td class="l">He = Copernicus → (C) 뒤</td></tr>
+<tr><td>(A)</td><td class="l"><b>Using the telescope</b>, Galileo가 목성 위성 발견, 지동설 확증</td><td class="l">(B) 끝의 망원경을 받음 → 맨 끝</td></tr>
+</table>
+<h3>② 정답: ⑤ (C)-(B)-(A)</h3>
+<div class="key">망원경 이전에도 우주를 이해하려 함 → (C) 고대 민족과 Copernicus의 맨눈 관측 → (B) Copernicus가 지동설을 주장, 이후 망원경이 발전 → (A) 망원경으로 Galileo가 지동설을 확증.</div>
+<h3>③ 오답 순서가 안 되는 이유</h3>
+<ul class="ch">
+<li>(A)로 시작(①) <span class="x">— the telescope와 Copernicus’ theory가 아직 소개되지 않았습니다.</span></li>
+<li>(B)로 시작(②, ③) <span class="x">— He가 누구인지 알 수 없습니다.</span></li>
+<li>(C)-(A)-(B)(④) <span class="x">— (C)는 맨눈 관측으로 끝나는데 (A)가 '그 망원경'을 쓰려면 (B)의 망원경 발전이 먼저 필요합니다.</span></li>
+</ul>
+<div class="tip"><b>순서 공략법</b> 역사 소재는 <b>시간 순서</b>(16세기 → 17세기 초)와 <b>대명사(He)·정관사(the telescope)</b>를 함께 보세요.</div>'''
+
+S['38'] = '<h2>38번 · 문장 삽입 [2점]</h2>\n' + img(38) + '''<h3>① 주어진 문장 먼저 해부하기</h3>
+<p>As <b>these communities</b> grew in size, <b>though</b>, the inadequacies of <b>this system</b> would become evident.<br>→ 앞에는 '작은 공동체'와 '어떤 체계(단위 정의 방식)'가, 뒤에는 그 불충분함이 드러나는 예가 와야 합니다.</p>
+<h3>② 위치별 점검</h3>
+<table>
+<tr><th>위치</th><th>앞 / 뒤</th><th>판단</th></tr>
+<tr><td>①·②</td><td class="l">일관성이 필요하다, 주관적 측정은 공유가 어렵다</td><td class="l">× communities가 아직 없음</td></tr>
+<tr><td>③·④</td><td class="l">측정은 '거리의 기술', 단위는 믿을 만한 정의가 필요</td><td class="l">× this system이 가리킬 구체적 체계가 없음</td></tr>
+<tr><td>⑤</td><td class="l">앞: 초기 사회에서는 <b>한 정착지</b> 안에서만 공유, 단위 = 특정 신체 부위 / 뒤: 무역·조공을 둘러싼 불일치를 상상해 보라</td><td class="l">○ settlement → communities, 신체 단위 → this system</td></tr>
+</table>
+<h3>③ 정답: ⑤</h3>
+<div class="key">초기 사회에서는 한 정착지 안에서만 정의를 공유하면 됐고, 단위는 신체 부위 정도면 충분했다 → <b>[주어진 문장] 그러나 공동체가 커지면서 이 체계의 불충분함이 드러났다</b> → 무역이나 조공을 둘러싼 갈등이 더 큰 일관성을 요구했다.</div>
+<div class="tip"><b>삽입 공략법</b> 주어진 문장의 <b>these·this</b>가 가리킬 대상을 찾고, <b>though</b>로 방향이 꺾이는 지점을 확인하세요. ⑤ 뒤 Imagine a disagreement가 '불충분함'의 예가 됩니다.</div>'''
+
+S['39'] = '<h2>39번 · 문장 삽입 [2점]</h2>\n' + img(39) + '''<h3>① 주어진 문장 먼저 해부하기</h3>
+<p><b>Instead</b>, smaller worker ants take the pieces of leaves, chew them into smaller pieces, and use these as fertilizer to grow <b>fungus</b> in large underground ‘gardens.’<br>→ 앞에는 '잎을 ~하지 않는다'는 부정이, 뒤에는 fungus를 받는 내용이 와야 합니다.</p>
+<h3>② 위치별 점검</h3>
+<table>
+<tr><th>위치</th><th>앞 / 뒤</th><th>판단</th></tr>
+<tr><td>①·②</td><td class="l">개미는 농부다, 신선한 식물을 찾아 큰 조각을 둥지로 가져온다</td><td class="l">× Instead가 받을 부정문이 없음</td></tr>
+<tr><td>③</td><td class="l">앞: However, the ants <b>don’t eat</b> these leaves / 뒤: The ants feed <b>the fungus</b></td><td class="l">○ don’t eat → Instead, fungus → the fungus</td></tr>
+<tr><td>④·⑤</td><td class="l">균이 열매를 맺어 개미가 먹는다, 거대한 둥지</td><td class="l">× the fungus가 이미 앞에서 나온 뒤</td></tr>
+</table>
+<h3>③ 정답: ③</h3>
+<div class="key">개미가 잎 조각을 가져오지만 먹지는 않는다 → <b>[주어진 문장] 대신 작은 일개미가 잎을 씹어 균을 키우는 비료로 쓴다</b> → 개미는 그 균에게 먹이를 주고, 균이 열매를 맺으면 먹는다.</div>
+<div class="tip"><b>삽입 공략법</b> 주어진 문장의 첫 단어(<b>Instead</b>)와 마지막 새 정보(<b>fungus</b>)를 동시에 맞추세요. 앞은 부정문, 뒤는 the fungus로 시작하는 자리가 정답입니다.</div>'''
+
+S['40'] = '<h2>40번 · 요약문 완성 [2점]</h2>\n' + img(40) + '''<h3>① 요약문 구조</h3>
+<p>Self-esteem works as a monitoring mechanism that signals that there might be <b>(A)</b> in people’s social bonds, allowing them to adjust their behavior to enhance <b>(B)</b>.<br>→ 자아존중감은 사회적 유대에 (A)가 있을 수 있다고 알리는 감시 기제이며, 사람들이 행동을 조정해 (B)를 향상시키게 한다.</p>
+<h3>② 정답 근거</h3>
+<div class="key"><span class="en">it detects that our relational value is <b>falling or low</b> … the <b>threat</b> to our social bonds … Do I need to adjust my behaviors <b>to fix the relationship</b>?</span><br>(A) 관계 가치 하락·위협 = <b>problems</b>. (B) 관계를 바로잡다 = <b>relationships</b>. 정답은 <b>① problems …… relationships</b>.</div>
+<h3>③ 선택지 전부 분석</h3>
+<ul class="ch">
+<li class="ans">① problems …… relationships <span class="o">— 정답.</span> threat ↔ problems, fix the relationship ↔ enhance relationships</li>
+<li>② improvements …… interactions <span class="x">— 경보는 '개선'이 아니라 '문제'를 알립니다.</span></li>
+<li>③ improvements …… adaptation <span class="x">— (A)부터 틀립니다.</span></li>
+<li>④ patterns …… comfort <span class="x">— 감시 기제가 찾는 것은 패턴이 아니라 관계 가치의 하락입니다.</span></li>
+<li>⑤ problems …… worry <span class="x">— (A)는 맞지만 걱정을 '향상'시킨다는 (B)는 말이 안 됩니다.</span></li>
+</ul>
+<h3>④ 핵심 구문</h3>
+<div class="key"><span class="en">It also makes sense that we would develop specific mechanisms to attend to <b>minimizing rejection and enhancing acceptance</b>.</span><br>attend to + 동명사: '~에 주의를 기울이다'. enhancing acceptance가 (B) 자리의 근거입니다.</div>
+<div class="tip"><b>요약문 공략법</b> (A)·(B)를 따로 판단하세요. (A)가 맞는 선택지가 둘(①·⑤)이면 (B)에서 본문의 fix the relationship과 바꿔 쓴 말을 고르면 됩니다.</div>'''
+
+json.dump(S, open('secs_09g1.json', 'w'), ensure_ascii=False)
+print(len(S))

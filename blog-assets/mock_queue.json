@@ -131,7 +131,20 @@
   {
    "code": "09g1",
    "name": "9월 고1",
-   "done": false
+   "done": false,
+   "date": "2026-11-26",
+   "tistory_left": [
+    "P1",
+    "P2",
+    "P3"
+   ],
+   "assets": "blog-assets/v2_09g1/ (스크린샷·티스토리 HTML·썸네일 ec47f24, hard HTML 4a7575b)",
+   "blogspot": [
+    "https://kkhnote.blogspot.com/2026/11/mock-09g1-imp.html",
+    "https://kkhnote.blogspot.com/2026/11/mock-09g1-blank.html",
+    "https://kkhnote.blogspot.com/2026/11/mock-09g1-order.html"
+   ],
+   "blogspot_date": "2026-11-26 (12:00/12:30/13:00 예약, 라벨 5개 적용)"
   },
   {
    "code": "09g2",

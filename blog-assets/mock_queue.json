@@ -151,7 +151,22 @@
   {
    "code": "09g2",
    "name": "9월 고2",
-   "done": false
+   "done": true,
+   "date": "2026-11-27",
+   "tistory_left": [],
+   "assets": "blog-assets/v2_09g2/ (스크린샷·티스토리 HTML·썸네일 5056639, hard HTML c0d08b7)",
+   "blogspot": [
+    "https://kkhnote.blogspot.com/2026/11/mock-09g2-imp.html",
+    "https://kkhnote.blogspot.com/2026/11/mock-09g2-blank.html",
+    "https://kkhnote.blogspot.com/2026/11/mock-09g2-order.html"
+   ],
+   "blogspot_date": "2026-11-27 (12:00/12:30/13:00 예약, 라벨 5개 적용)",
+   "tistory": {
+    "P1": "https://kkhland.tistory.com/entry/2026-9월-고2-영어-모의고사-듣기-해설",
+    "P2": "https://kkhland.tistory.com/entry/2026-9월-고2-영어-모의고사-독해-18-30-해설",
+    "P3": "https://kkhland.tistory.com/entry/2026-9월-고2-영어-모의고사-독해-31-45-해설"
+   },
+   "tistory_date": "2026-11-27 (12:00/12:30/13:00 예약)"
   },
   {
    "code": "09g3",

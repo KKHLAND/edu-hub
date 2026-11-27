@@ -1,0 +1,216 @@
+import json, sys
+REF = sys.argv[1] if len(sys.argv) > 1 else 'REF'
+B = f'https://raw.githubusercontent.com/KKHLAND/edu-hub/{REF}/blog-assets/v2_09g2/'
+def img(n, lab=None):
+    lab = lab or f'{n}번'
+    return (f'<img src="{B}q{n}.png" alt="2026년 9월 고2 영어 모의고사 {lab} 발문 지문 선택지 해석 어휘">\n'
+            '<p class="cap">발문·지문·선택지·해석·어휘</p>\n')
+S = {}
+S['21'] = '<h2>21번 · 함축 의미 추론 [3점]</h2>\n' + img(21) + '''<h3>① 지문 구조</h3>
+<p><b>비유 제시</b> 유연한 시간 문화의 회의는 상록수와 같다 → <b>줄기</b> 회의 전에 배부되는 의제(시작 시간·주제) → <b>가지</b> 우선순위가 바뀌면 논의가 새 방향으로 뻗고, 급한 전화나 소그룹 논의로 또 다른 가지가 싹튼다 → <b>결론</b> 가장 생산적인 회의는 예측 불가능하게 자라며, 방해·의제 변경·방향 전환은 자연스럽고 필수적이다.</p>
+<h3>② 정답 근거</h3>
+<div class="key"><span class="en">there’s <b>no expectation that the meeting will progress in a linear manner</b> … the most productive meetings <b>grow in unpredictable ways</b></span><br>상록수 = 줄기(의제)를 중심으로 가지가 계속 자라나는 나무. 회의가 바뀌는 우선순위에 맞춰 뻗어 나간다는 뜻이므로 <b>② 변화하는 초점에 적응하는 유동적인 과정</b>입니다.</div>
+<h3>③ 선택지 전부 분석</h3>
+<ul class="ch">
+<li>① 이견 없이 고정된 논의 <span class="x">— 방향 전환이 필수적이라고 했으므로 정반대입니다.</span></li>
+<li class="ans">② 변화하는 초점에 적응하는 유동적인 과정 <span class="o">— 정답.</span> branch off, sprout, grow in unpredictable ways</li>
+<li>③ 필요를 충족하는 엄격한 의사소통 체계 <span class="x">— '엄격한(strict)'이 글의 유연성과 맞지 않습니다.</span></li>
+<li>④ 안정적으로 유지되는 장기적 사업 관계 <span class="x">— evergreen(늘 푸른)을 '오래 지속되는'으로 읽은 함정입니다.</span></li>
+<li>⑤ 갑작스러운 수정에 저항하는 일관된 전통 <span class="x">— 수정과 방향 전환을 자연스럽게 받아들인다고 했습니다.</span></li>
+</ul>
+<h3>④ 핵심 구문</h3>
+<div class="key"><span class="en">What seemed like a priority last week when the agenda was crafted <b>is not necessarily</b> the priority right now</span><br>What이 이끄는 명사절이 주어(지난주 우선순위처럼 보였던 것), not necessarily는 부분 부정 '반드시 ~인 것은 아니다'.</div>
+<div class="tip"><b>함축 의미 공략법</b> 비유(상록수)는 글이 직접 풀어 줍니다: 줄기 = 의제, 가지 = 새 방향. 비유 단어의 '사전적 이미지'(늘 푸름 = 변함없음)만 보고 고른 ④·⑤가 가장 강한 함정입니다.</div>'''
+
+S['29'] = '<h2>29번 · 어법 [3점]</h2>\n' + img(29) + '''<h3>① 지문 구조</h3>
+<p><b>정의</b> 자본주의는 값싼 자연의 바다 안에 현금 교환의 섬들이 있는 체계다 → 현금 거래 관계 안에서 삶을 재생산하는 비용은 점점 커진다 → 불평등은 위기를 낳고, 노동은 비싸지고, 에너지는 더 이상 값싸지 않고, 작물은 예전만큼 자라지 않는다 → <b>그래서</b> 새로운 값싼 것들을 확보할 수 있는 미개척 영역이 중요하다.</p>
+<h3>② 정답: ⑤ which → where</h3>
+<div class="key"><span class="en">they offer places ⑤ <b>which</b> the new cheap things can be seized</span><br>which 뒤의 절(the new cheap things can be seized)은 주어·동사가 다 갖춰진 <b>완전한 수동태 절</b>입니다. 장소 선행사 places를 받아 완전한 절을 이끄는 관계부사 <b>where</b>가 와야 합니다.</div>
+<h3>③ 선택지 전부 분석</h3>
+<ul class="ch">
+<li>① (one) in which <span class="x">— 뒤의 절(islands of cash exchange exist …)이 완전하므로 전치사 + 관계대명사(= where)가 맞습니다.</span></li>
+<li>② Reproducing <span class="x">— 동명사구 주어(삶을 재생산하는 것), 동사는 is. 맞습니다.</span></li>
+<li>③ bring <span class="x">— 지각동사 see + 목적어 + 동사원형: the kind (that) we’ve seen bring about protests. 맞습니다.</span></li>
+<li>④ abundantly <span class="x">— 자동사 grow를 꾸미는 부사. 맞습니다.</span></li>
+<li class="ans">⑤ which <span class="o">— 정답(틀린 것).</span> 뒤가 완전한 절 → where</li>
+</ul>
+<h3>④ 핵심 구문</h3>
+<div class="key"><span class="en">Capitalism is <b>not</b> a system <b>where</b> cash is everywhere <b>but rather</b> one ① <b>in which</b> islands of cash exchange exist</span><br>같은 글 첫 문장에서 완전한 절 앞에 where와 in which가 쓰였습니다. not A but rather B: 'A가 아니라 오히려 B'. ①이 맞고 ⑤가 틀린 이유를 비교해 보세요.</div>
+<div class="tip"><b>어법 공략법</b> which/where 밑줄은 <b>뒤 절이 완전한지</b>만 보세요. 수동태(can be seized)도 완전한 절입니다. 빠진 성분이 없으면 where(= in which)입니다.</div>'''
+
+S['30'] = '<h2>30번 · 문맥상 낱말의 쓰임 [3점]</h2>\n' + img(30) + '''<h3>① 지문 구조</h3>
+<p><b>현상</b> 친환경 제품을 산 뒤 오히려 속이거나 훔칠 가능성이 높다(도덕적 허가) → 환경에 해로운 행동을 떠올리면 '환경 죄책감'이 남고, 그것을 보상해 균형을 회복하려는 친환경 행동을 찾는다 → 이때 사람들은 임시방편을 (③)하는데, 죄책감을 빠르고 쉽게 벗어나고 싶기 때문이다 → 태도처럼 행동에 대한 평가도 바꾼다 → 예: 환경 훼손 증거를 본 뒤 청원서에 서명할 가능성이 높다.</p>
+<h3>② 정답: ③ reluctant → inclined</h3>
+<div class="key"><span class="en">people are ③ <b>reluctant</b> to believe in “quick-fixes” <b>because</b> they want to re-establish the moral balance and escape the guilt <b>as quickly and easily as possible</b></span><br>빨리 쉽게 죄책감에서 벗어나고 싶다면 임시방편을 '꺼리는' 것이 아니라 <b>믿고 싶어 하는(inclined)</b> 것이 자연스럽습니다.</div>
+<h3>③ 선택지 전부 분석</h3>
+<ul class="ch">
+<li>① observed <span class="x">— 도덕적 허가가 환경 협조의 맥락에서도 '관찰되어' 왔다. 적절합니다.</span></li>
+<li>② restore <span class="x">— 죄책감을 보상하고 균형을 '회복하기' 위해. 적절합니다.</span></li>
+<li class="ans">③ reluctant <span class="o">— 정답(부적절).</span> because + as quickly and easily as possible → inclined</li>
+<li>④ evaluations <span class="x">— 태도를 바꾸듯 과거·미래 행동에 대한 '평가'도 바꾼다. 적절합니다.</span></li>
+<li>⑤ more <span class="x">— 환경 훼손 증거를 본 뒤 청원서에 서명할 가능성이 '더' 높다(죄책감 보상의 예). 적절합니다.</span></li>
+</ul>
+<h3>④ 핵심 구문</h3>
+<div class="key"><span class="en"><b>In the same way that</b> people may change their attitudes to reduce inconsistencies …, people may also change their evaluations</span><br>In the same way that ~: '~하는 것과 같은 방식으로'. 앞뒤 두 절이 같은 원리를 공유한다는 신호입니다.</div>
+<div class="tip"><b>어휘 공략법</b> 밑줄 단어 바로 뒤의 <b>because 이유</b>와 방향이 맞는지 확인하세요. '빨리 쉽게 벗어나고 싶어서 꺼린다'처럼 이유와 행동이 어긋나면 그 단어가 정답입니다.</div>'''
+
+S['42'] = '<h2>42번 · 장문 어휘 [2점] (41번 제목 포함)</h2>\n' + img('41-42', '41~42번') + '''<h3>① 지문 구조</h3>
+<p><b>개념</b> 선택 구조: 선택 환경의 설계가 결정에 큰 영향을 준다 → 알고리즘은 디지털 환경의 정교한 설계자로, 우리가 볼 것과 추천받을 것을 골라 특정 경로로 넛지한다 → 넛지는 유익할 수도 있지만 조작의 가능성도 있다 → <b>질문</b> 알고리즘화된 세상에서 인간의 주체성을 어떻게 지킬까? → <b>답</b> 비판적 관계 유지: 다양한 관점을 찾고, 알고리즘 추천에 (d)___하고, 예측된 흐름에 반하는 선택을 하라.</p>
+<h3>② 정답: ④ (d) following → challenging</h3>
+<div class="key"><span class="en">It means actively seeking out diverse perspectives, (d) <b>following</b> algorithmic recommendations, and making deliberate choices that <b>go against the predicted grain</b>.</span><br>주체성을 지키는 행동의 나열입니다. 다양한 관점 찾기, 예측된 흐름에 반하는 선택과 나란히 오려면 알고리즘 추천을 '따르는' 것이 아니라 <b>도전하는(challenging)</b> 것이어야 합니다.</div>
+<h3>③ 선택지 전부 분석</h3>
+<ul class="ch">
+<li>(a) sophisticated <span class="x">— 알고리즘은 디지털 환경의 '정교한' 설계자. 적절합니다.</span></li>
+<li>(b) particular <span class="x">— 우리를 '특정한' 경로로 넛지한다. 적절합니다.</span></li>
+<li>(c) conscious <span class="x">— 비판적 관계를 유지하려는 '의식적인' 노력. 적절합니다.</span></li>
+<li class="ans">(d) following <span class="o">— 정답(부적절).</span> go against the predicted grain → challenging</li>
+<li>(e) reflection <span class="x">— 데이터는 과거 현실의 '반영'일 뿐 미래의 처방은 아니다. 적절합니다.</span></li>
+</ul>
+<h3>④ 41번 제목도 함께</h3>
+<div class="key">알고리즘이 설계한 디지털 공간에서 비판적 태도로 인간의 주체성을 기르고 지키자 → <b>① Fostering Human Agency in Designed Digital Spaces</b>. ③(알고리즘 의사결정의 윤리 논란)은 조작 가능성 한 부분만 확대했고, ②는 creativity라는 글에 없는 초점을 세웠습니다.</div>
+<div class="tip"><b>장문 어휘 공략법</b> 나열(A, B, and C) 속 밑줄은 <b>나머지 항목과 방향이 같은지</b> 보세요. 셋 중 하나만 반대 방향이면 그 단어가 정답입니다.</div>'''
+
+S['31'] = '<h2>31번 · 빈칸 추론(단어) [2점]</h2>\n' + img(31) + '''<h3>① 빈칸 문장의 역할</h3>
+<p>인문 지리학이 모호해지고 있다 → 사람들이 늘 이동하면서 고체가 액체·기체로 바뀌는 상태 변화처럼 분자가 느슨해지고 빨리 진동한다 → 인간은 속도와 위치가 늘 변하는 양자 입자 같다 → 안정으로 돌아가면 좋겠지만 그렇지 않다 → <b>빈칸 문장</b>: 오늘날 세계의 복잡성은 어디에든 영구적으로 ______하기 점점 어렵게 만든다 → 디지털 유목민, 여러 여권을 가진 억만장자, 이주 노동자.</p>
+<h3>② 정답 근거</h3>
+<div class="key"><span class="en">regularly <b>on the move</b> … velocity and location <b>always in flux</b> … It would be nice to return to some form of <b>stability</b></span><br>늘 이동하는 사람들 → 한곳에 영구적으로 <b>② settle(정착하다)</b>하기 어렵다. permanently와 짝을 이루는 동사입니다.</div>
+<h3>③ 선택지 전부 분석</h3>
+<ul class="ch">
+<li>① travel <span class="x">— 이동은 오히려 쉬워진 상황입니다. '영구적으로 여행하기 어렵다'는 흐름과 맞지 않습니다.</span></li>
+<li class="ans">② settle <span class="o">— 정답.</span> on the move, in flux ↔ settle permanently</li>
+<li>③ disappear <span class="x">— 사라지는 이야기는 없습니다.</span></li>
+<li>④ hide <span class="x">— 숨는 것과 관련이 없습니다.</span></li>
+<li>⑤ suffer <span class="x">— 이주의 어려움을 떠올리게 하는 함정이지만 글은 '고통'이 아니라 '불안정한 위치'를 말합니다.</span></li>
+</ul>
+<h3>④ 핵심 구문</h3>
+<div class="key"><span class="en">the complexity of today’s world makes <b>it</b> increasingly difficult <b>to settle</b> permanently anywhere</span><br>make + 가목적어 it + 형용사 + 진목적어 to부정사: '~하는 것을 …하게 만든다'.</div>
+<div class="tip"><b>빈칸 공략법</b> 빈칸 바로 옆 부사(permanently anywhere)가 강력한 단서입니다. '영구적으로 어디에든'과 자연스럽게 어울리는 동사를 고르세요.</div>'''
+
+S['32'] = '<h2>32번 · 빈칸 추론(구) [3점]</h2>\n' + img(32) + '''<h3>① 빈칸 문장의 역할</h3>
+<p>가장 근본적인 인지적 동기는 불확실성 속에서 무슨 일이 일어날지 예측하려고 환경을 이해하는 것 → <b>빈칸 문장</b>: 가장 중요한 점은, 사람들은 ______한 의미를 발전시키는 것을 선호한다는 것 → 예: 입학생이 넘쳐 캠퍼스 호텔에 사는 학생들은 시설이 좋아도 문제다 → 안정된 집단의 일원이 아니라서 → 안정된 집단에서 생기는 공유된 사회적 이해가 없다.</p>
+<h3>② 정답 근거</h3>
+<div class="key"><span class="en">People lack <b>a shared social understanding</b>, normally developed from <b>membership in a stable group</b>.</span><br>문제는 시설이 아니라 '함께 나누는 이해'가 없다는 것 → <b>① are shared with other people(다른 사람들과 공유되는)</b>.</div>
+<h3>③ 선택지 전부 분석</h3>
+<ul class="ch">
+<li class="ans">① 다른 사람들과 공유되는 <span class="o">— 정답.</span> shared social understanding, stable group</li>
+<li>② 그들을 다수와 구별해 주는 <span class="x">— 오히려 집단에 속하고 싶어 하는 내용입니다.</span></li>
+<li>③ 개인적 편안함과 사치를 반영하는 <span class="x">— 개인 욕실·TV·넓은 방(편안함)이 있어도 문제라는 예시를 거꾸로 읽은 함정입니다.</span></li>
+<li>④ 논리적 실험으로 증명될 수 있는 <span class="x">— 실험·증명은 나오지 않습니다.</span></li>
+<li>⑤ 빠르게 변하는 환경에서 유연하게 유지되는 <span class="x">— 사람들은 '안정된' 집단을 원한다고 했습니다.</span></li>
+</ul>
+<h3>④ 핵심 구문</h3>
+<div class="key"><span class="en">living in those hotels is problematic <b>because</b> the student residents are <b>not</b> a part of a stable group with people who will be their neighbors for the year</span><br>In fact 뒤 because 절이 예시의 결론입니다. 시설(방·욕실)이 아니라 '사람과의 관계'가 원인이라는 점이 빈칸을 정합니다.</div>
+<div class="tip"><b>빈칸 공략법</b> 예시가 '의외의 결과'(좋은 호텔이 오히려 문제)를 보여 줄 때는 <b>In fact·because 뒤의 진짜 이유</b>가 빈칸의 내용입니다. 예시의 표면(편안함)을 담은 ③이 함정입니다.</div>'''
+
+S['33'] = '<h2>33번 · 빈칸 추론(구) [3점]</h2>\n' + img(33) + '''<h3>① 빈칸 문장의 역할</h3>
+<p>심리학 이론들은 상실을 애도하는 것의 중요성에 동의한다 → 애도는 연약함과 죽음을 직시하게 하고 상실 이후 삶의 에너지를 회복하게 한다 → 슬픔을 존중하는 동시에 자기 변신의 기반을 만든다 → 잃은 것을 애도하면 남은 것에 대한 사랑과 헌신이 강해지고 → 피해를 고치거나 보상하려는 욕구가 생긴다 → <b>빈칸 문장</b>: 애도는 ______할 수 있다.</p>
+<h3>② 정답 근거</h3>
+<div class="key"><span class="en">Grief work honours <b>the loss, the sadness</b> … In time this may build <b>a desire to make good from the loss by repairing</b> as many damages as we can</span><br>슬픔(sadness)과 행동하려는 욕구(desire to repair)를 함께 담아야 합니다 → <b>① 우리를 매우 슬프게 하면서 동시에 행동하도록 강하게 동기를 부여한다</b>.</div>
+<h3>③ 선택지 전부 분석</h3>
+<ul class="ch">
+<li class="ans">① 매우 슬프게 하면서 행동하도록 강하게 동기를 부여한다 <span class="o">— 정답.</span> sadness + desire to make good</li>
+<li>② 상실의 중요성을 과소평가하게 한다 <span class="x">— 애도는 상실을 '존중(honours)'한다고 했습니다.</span></li>
+<li>③ 개인적 성장과 변화의 가능성을 막는다 <span class="x">— 자기 변신의 기반을 만든다고 했으므로 정반대입니다.</span></li>
+<li>④ 자기 성찰을 돕고 타인과 거리를 두게 한다 <span class="x">— 사랑과 헌신을 강화한다고 했으므로 '거리 두기'가 틀립니다.</span></li>
+<li>⑤ 같은 고난을 다시 겪지 않게 보장한다 <span class="x">— 재발 방지는 다루지 않습니다.</span></li>
+</ul>
+<h3>④ 핵심 구문</h3>
+<div class="key"><span class="en">it supports us to <b>both</b> face into our own and others’ vulnerability, transience and mortality, <b>and</b> to repair life energy after significant loss</span><br>both A and B: 애도의 두 얼굴(직시와 회복)을 함께 제시합니다. 빈칸도 이 '양면성'을 담은 선택지가 정답입니다.</div>
+<div class="tip"><b>빈칸 공략법</b> 글 전체가 '슬픔 + 회복·행동'의 양면을 반복하면, 빈칸도 <b>두 요소를 모두 담은 선택지</b>입니다. 한쪽만 담거나 반대로 말하는 선택지를 지우세요.</div>'''
+
+S['34'] = '<h2>34번 · 빈칸 추론(절) [3점]</h2>\n' + img(34) + '''<h3>① 빈칸 문장의 역할</h3>
+<p><b>빈칸 문장(주제)</b> 매체의 분명한 측면에 집중하면 ______한 변화를 놓친다 → 대부분 새 기술의 분명한 측면은 보지만 미묘한 측면은 놓친다 → 예: 전자레인지는 요리 시간을 줄여 주었지만(단기적·분명한 편리함), 시간이 흐르며 가족이 함께 저녁을 먹지 않게 되었다(장기적 영향) → 이 영향은 예상되지 못했고 예견하기도 어려웠다.</p>
+<h3>② 정답 근거</h3>
+<div class="key"><span class="en">the short-term, obvious implications … made it easy to overlook the <b>long-term implications</b> … <b>As time went on</b>, fewer and fewer families sat down together</span><br>시간이 흐르며 쌓이지만 당장은 보이지 않는 변화 → <b>③ accumulate over time but are not apparent day to day</b>.</div>
+<h3>③ 선택지 전부 분석</h3>
+<ul class="ch">
+<li>① 예상치 못한 방식으로 가족 유대를 강화한다 <span class="x">— 가족이 함께 먹지 않게 되었으므로 '강화'가 틀립니다.</span></li>
+<li>② 순전히 기술적이고 사회적 결과가 없다 <span class="x">— 가족생활(사회적 결과)에 영향을 미쳤습니다.</span></li>
+<li class="ans">③ 시간이 흐르며 축적되지만 하루하루는 드러나지 않는다 <span class="o">— 정답.</span> subtle, long-term, as time went on</li>
+<li>④ 세계 경제와 노동 시장을 서서히 바꾼다 <span class="x">— 여성 요리사의 해방이 나오지만 글로벌 경제 이야기는 아닙니다.</span></li>
+<li>⑤ 증상 없이 건강을 서서히 해친다 <span class="x">— 음식 소재를 이용한 함정. 건강은 다루지 않습니다.</span></li>
+</ul>
+<h3>④ 핵심 구문</h3>
+<div class="key"><span class="en">the short-term, obvious implications of greater convenience <b>made it easy to overlook</b> the long-term implications</span><br>make + it(가목적어) + easy + to부정사. 단기·분명함 ↔ 장기·간과됨의 대비가 빈칸의 내용입니다.</div>
+<div class="tip"><b>빈칸 공략법</b> 첫 문장 빈칸은 글의 주제이며, 뒤에 오는 <b>대비쌍</b>(obvious ↔ subtle, short-term ↔ long-term)의 뒤쪽 항목이 빈칸입니다.</div>'''
+
+S['36'] = '<h2>36번 · 글의 순서 [2점]</h2>\n' + img(36) + '''<h3>① 단서 정리</h3>
+<table>
+<tr><th>단락</th><th>첫머리 단서</th><th>무엇을 받나</th></tr>
+<tr><td>주어진 글</td><td class="l">먹이·은신처·짝에 적합한 <b>환경을 고르는 능력</b>이 생물학적 성공의 결정 요소</td><td class="l">→ 그 능력에 대한 연구가 이어질 차례</td></tr>
+<tr><td>(C)</td><td class="l"><b>Many studies</b> … 최적의 장소를 찾을 뿐 아니라 <b>미래의 필요</b>까지 예측한다</td><td class="l">주어진 글의 '능력'을 연구로 확장 → 바로 뒤</td></tr>
+<tr><td>(A)</td><td class="l"><b>For example</b>, 솔새는 먹이가 더 적은 붉은 가문비나무에 영역을 만든다</td><td class="l">(C)의 '미래 예측'의 예 → (C) 뒤</td></tr>
+<tr><td>(B)</td><td class="l"><b>Later, though</b>, 새끼가 먹이를 필요로 할 때 붉은 가문비나무가 더 쉬운 먹이를 준다</td><td class="l">(A)의 '먹이가 적은데도'를 반전 → 맨 끝</td></tr>
+</table>
+<h3>② 정답: ④ (C)-(A)-(B)</h3>
+<div class="key">환경 선택 능력이 생물학적 성공을 좌우 → (C) 동물은 미래의 필요까지 예측한다 → (A) 예: 솔새는 초여름에 먹이가 적은 붉은 가문비나무에 영역을 만든다 → (B) 하지만 나중에 새끼가 태어나면 그곳이 먹이가 가장 쉽다, 미래의 양육 필요에 맞춘 선택.</div>
+<h3>③ 오답 순서가 안 되는 이유</h3>
+<ul class="ch">
+<li>(A)로 시작(①) <span class="x">— For example이 받을 '미래 예측' 개념이 아직 없습니다.</span></li>
+<li>(B)로 시작(②, ③) <span class="x">— Later, though와 the red spruce forest가 가리킬 대상이 없습니다.</span></li>
+<li>(C)-(B)-(A)(⑤) <span class="x">— (B)의 '나중에'는 (A)의 '초여름'이 먼저 나와야 시간 순서가 맞습니다.</span></li>
+</ul>
+<div class="tip"><b>순서 공략법</b> <b>early in the summer → Later</b>처럼 시간 표현이 있으면 그 순서대로 놓으세요. For example 단락은 개념(C) 바로 뒤입니다.</div>'''
+
+S['37'] = '<h2>37번 · 글의 순서 [2점]</h2>\n' + img(37) + '''<h3>① 단서 정리</h3>
+<table>
+<tr><th>단락</th><th>첫머리 단서</th><th>무엇을 받나</th></tr>
+<tr><td>주어진 글</td><td class="l">아이들은 언어 자체가 아니라 <b>상호작용의 패턴과 양식</b>을 배운다</td><td class="l">→ 구체적인 양식 설명이 이어질 차례</td></tr>
+<tr><td>(C)</td><td class="l"><b>They</b> develop a culture-specific communication style … 개인주의는 직접적(absolutely, certainly)</td><td class="l">They = children → 바로 뒤</td></tr>
+<tr><td>(B)</td><td class="l"><b>By contrast</b>, 집단주의는 maybe, perhaps 같은 모호한 표현 … 영어만 'I'를 대문자로</td><td class="l">(C)의 직접적 양식과 대조 → (C) 뒤</td></tr>
+<tr><td>(A)</td><td class="l"><b>This phenomenon</b> may reflect … 개인주의의 뿌리는 잉글랜드</td><td class="l">(B) 끝의 'I 대문자' 현상 → 맨 끝</td></tr>
+</table>
+<h3>② 정답: ⑤ (C)-(B)-(A)</h3>
+<div class="key">아이들은 상호작용 양식을 배운다 → (C) 그들은 문화별 양식을 발달시키며, 개인주의 문화는 직접적 → (B) 대조적으로 집단주의 문화는 모호한 어휘, 영어는 I를 대문자로 쓰는 유일한 언어 → (A) 이 현상은 개인주의의 뿌리가 잉글랜드에 있음을 반영, 일본어에는 I에 해당하는 말이 없다.</div>
+<h3>③ 오답 순서가 안 되는 이유</h3>
+<ul class="ch">
+<li>(A)로 시작(①) <span class="x">— This phenomenon이 가리킬 현상(I 대문자)이 아직 없습니다.</span></li>
+<li>(B)로 시작(②, ③) <span class="x">— By contrast가 대조할 직접적 양식이 먼저 나와야 합니다.</span></li>
+<li>(C)-(A)-(B)(④) <span class="x">— (C) 끝은 absolutely 같은 단어인데, (A)의 This phenomenon은 '현상'이라 연결되지 않습니다.</span></li>
+</ul>
+<div class="tip"><b>순서 공략법</b> <b>This phenomenon·By contrast</b>처럼 앞 내용을 받는 표현은 '무엇을' 받는지 구체적으로 찾으세요. 단락 끝 문장(I를 대문자로)이 다음 단락의 지시어와 이어지는 경우가 많습니다.</div>'''
+
+S['38'] = '<h2>38번 · 문장 삽입 [3점]</h2>\n' + img(38) + '''<h3>① 주어진 문장 먼저 해부하기</h3>
+<p><b>So</b> if an individual is <b>looking forward to</b> a concert, say, the feeling of crowding <b>enhances</b> their enjoyment of the performance.<br>→ So는 앞 내용의 결과·예시입니다. 앞에는 '혼잡이 기분을 강화한다'는 일반 원리가, 뒤에는 반대 경우(두려워하는 경우)가 와야 합니다.</p>
+<h3>② 위치별 점검</h3>
+<table>
+<tr><th>위치</th><th>앞 / 뒤</th><th>판단</th></tr>
+<tr><td>①·②</td><td class="l">밀도와 혼잡성의 구분, 혼잡은 과부하·스트레스를 준다</td><td class="l">× 부정적 설명뿐이라 '즐거움을 높인다'의 근거가 없음</td></tr>
+<tr><td>③</td><td class="l">앞: However, 혼잡은 중립적이며 <b>밀도가 오르면 기분과 행동이 강화된다</b> / 뒤: <b>But if they are dreading</b> an event</td><td class="l">○ 일반 원리 → So 기대하는 경우 → But 두려워하는 경우</td></tr>
+<tr><td>④·⑤</td><td class="l">공동체 환경에서 지배적 행동이 두드러짐, 긍정적 사회적 공간</td><td class="l">× 개인 예시가 끝난 뒤</td></tr>
+</table>
+<h3>③ 정답: ③</h3>
+<div class="key">혼잡성은 중립적이며 밀도가 올라가면 기분과 행동이 강화된다 → <b>[주어진 문장] 그래서 콘서트를 기대하는 사람에게는 혼잡이 즐거움을 높인다</b> → 하지만 행사를 두려워한다면 혼잡은 경험을 더 나쁘게 만든다.</div>
+<div class="tip"><b>삽입 공략법</b> ③ 뒤의 <b>But if they</b>가 결정적입니다. they가 가리킬 '개인(an individual)'과, But이 대조할 '기대하는 경우'가 바로 앞에 있어야 합니다.</div>'''
+
+S['39'] = '<h2>39번 · 문장 삽입 [2점]</h2>\n' + img(39) + '''<h3>① 주어진 문장 먼저 해부하기</h3>
+<p><b>However</b>, individuals may be faced with <b>more exclusion</b> when they <b>cannot adapt</b> to a group.<br>→ 앞에는 '적응하면 배제가 줄어든다'는 반대 내용이, 뒤에는 배제가 늘어나는 과정이 와야 합니다.</p>
+<h3>② 위치별 점검</h3>
+<table>
+<tr><th>위치</th><th>앞 / 뒤</th><th>판단</th></tr>
+<tr><td>①·②</td><td class="l">기본 욕구를 강화하려 한다, 긍정적 행동이 소속감을 기른다</td><td class="l">× '적응하면 배제가 줄어든다'가 아직 없음</td></tr>
+<tr><td>③</td><td class="l">앞: 긍정적 행동에 <b>적응하려는</b> 사람은 배제 가능성이 <b>줄어든다</b> / 뒤: 배제된 개인이 소통에서 멀어지면 기여가 줄어든다</td><td class="l">○ adapt ↔ cannot adapt, decreases ↔ more exclusion</td></tr>
+<tr><td>④·⑤</td><td class="l">배제가 더 늘어나 성과에 악영향, 예방 조치가 필요</td><td class="l">× 이미 배제된 이후의 이야기</td></tr>
+</table>
+<h3>③ 정답: ③</h3>
+<div class="key">긍정적 행동에 적응하려는 사람은 배제될 가능성이 낮다 → <b>[주어진 문장] 그러나 집단에 적응하지 못하면 더 많은 배제에 직면할 수 있다</b> → 배제된 개인이 소통에서 멀어지면 조직 기여도가 줄어든다.</div>
+<div class="tip"><b>삽입 공략법</b> However 문장은 <b>앞 문장과 정반대 짝</b>(adapt ↔ cannot adapt)이 있는 자리에 들어갑니다. ③ 뒤 excluded individuals가 주어진 문장의 exclusion을 받는지도 확인하세요.</div>'''
+
+S['40'] = '<h2>40번 · 요약문 완성 [2점]</h2>\n' + img(40) + '''<h3>① 요약문 구조</h3>
+<p>According to the study, the motivation to do good deeds was more <b>(A)</b> in those who recalled their past virtues and those who focused purely on their good deeds than those who recalled their previous bad deeds and those who seemed highly <b>(B)</b> of the appearances of their deeds.<br>→ 선행 동기는 과거 미덕을 떠올리고 행위 자체에 집중한 사람에게서 더 (A)했다. 과거 나쁜 행위를 떠올리거나 겉모습을 강하게 (B)한 사람보다.</p>
+<h3>② 정답 근거</h3>
+<div class="key"><span class="en">gave, on average, over half the earnings … <b>almost twice as much</b> … people who seemed <b>concerned about appearances</b> … were less generous</span><br>(A) 기부를 거의 두 배 했다 = 동기가 더 <b>evident(분명한)</b>. (B) concerned about appearances = 겉모습을 <b>conscious(의식하는)</b>. 정답은 <b>① evident …… conscious</b>.</div>
+<h3>③ 선택지 전부 분석</h3>
+<ul class="ch">
+<li class="ans">① evident …… conscious <span class="o">— 정답.</span> twice as much ↔ evident, concerned about ↔ conscious</li>
+<li>② lacking …… observant <span class="x">— (A) '부족한'은 정반대입니다.</span></li>
+<li>③ noticeable …… ignorant <span class="x">— (A)는 그럴듯하지만, 겉모습에 '무지한' 사람은 오히려 행위 자체에 집중한 쪽입니다.</span></li>
+<li>④ suspended …… tolerant <span class="x">— (A)부터 틀립니다.</span></li>
+<li>⑤ activated …… forgetful <span class="x">— (A)는 비슷해 보여도 (B) '잊어버리는'이 반대입니다.</span></li>
+</ul>
+<h3>④ 핵심 구문</h3>
+<div class="key"><span class="en">subjects who’d taken pains to describe <b>not only</b> how they’d been nice to others <b>but</b> how people responded were likely to donate significantly less</span><br>주어(subjects … responded)가 길고 동사는 were입니다. not only A but B로 '반응까지 공들여 묘사한 사람' = 겉모습을 의식하는 사람.</div>
+<div class="tip"><b>요약문 공략법</b> 요약문의 비교 구조(more A in X than Y)를 본문의 결과(X가 Y의 거의 두 배)와 맞추세요. (B)는 본문 concerned about을 바꿔 쓴 말을 찾으면 됩니다.</div>'''
+
+json.dump(S, open('secs_09g2.json', 'w'), ensure_ascii=False)
+print(len(S))
